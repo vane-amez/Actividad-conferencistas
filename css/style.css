@@ -1,0 +1,53 @@
+marquee {
+    background-color: lightgray;     /* Color de fondo gris claro para la marquesina */
+    padding: 10px;                     /* Espaciado interno de 10 píxeles */
+    border: 1px solid black;         /* Borde sólido de color negro de 1 píxel de grosor */    
+}
+
+#footer-action {
+    background-color: red;        /* Color de fondo */
+    min-height: 30px;               /* Altura mínima de 30 píxeles */
+    padding: 10px;                  /* Espaciado interno de 10 píxeles en todos sus lados */
+    display: flex;                  /* Activa el modelo de diseño flexible (Flexbox) */
+    justify-content: center;        /* Alinea los elementos hijos horizontalmente al centro */
+    align-items: center;            /* Alinea los elementos hijos verticalmente al centro */
+    margin-top: 80px;               /* Margen superior de 80 píxeles */
+    transition: background-color 0.5s, border-radius 0.5s;  /* Suaviza el cambio de color de fondo y bordes redondeados durante 0.5 segundos */
+}
+
+#footer-action:hover {
+    background-color: darkred;     /* Cambia el color de fondo a rojo oscuro al pasar el cursor por encima */
+    border-radius: 10px;             /* Redondea las esquinas a 10 píxeles al pasar el cursor por encima */
+}
+
+.tarjetas {
+    display: flex;                   /* Activa el modelo de diseño flexible (Flexbox) para agrupar elementos */
+    justify-content: center;         /* Centra los elementos hijos horizontalmente en el contenedor */
+    align-items: flex-start;         /* Alinea los elementos hijos al inicio (arriba) verticalmente */
+    gap: 25px;                       /* Establece una separación de 25 píxeles entre cada elemento hijo */
+    margin: 30px;                    /* Margen exterior de 30 píxeles alrededor de todo el contenedor */
+}
+
+.tarjeta {
+    flex: 1 1 250px;                 /* Define cómo crece, encoge y su tamaño base (250px) como elemento flexible */
+    min-width: 0;                    /* Ancho mínimo de 0 para evitar desbordamientos en contenedores flexibles */
+    max-width: 350px                 /* Ancho máximo permitido de 350 píxeles */
+}
+
+.redes {
+    border-radius: 0;                /* Esquinas completamente cuadradas (sin radio de redondeo) */
+    transition: border-radius 0.5s;  /* Suaviza la transición del redondeo de esquinas durante 0.5 segundos */
+}
+
+.redes:hover {
+    border-radius: 50px;             /* Aplica un radio de borde de 50 píxeles al pasar el cursor por encima */
+}
+
+.foto-perfil {
+    border-radius: 0;                /* Esquinas completamente cuadradas (sin radio de redondeo) */
+    transition: border-radius 0.5s;  /* Suaviza la transición del redondeo de esquinas durante 0.5 segundos */
+}
+
+.foto-perfil:hover {
+    border-radius: 50px;             /* Aplica un radio de borde de 50 píxeles al pasar el cursor por encima */
+}
